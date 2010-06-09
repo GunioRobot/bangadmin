@@ -35,6 +35,7 @@
 # Install Python 2.6.5 on base CentOS 5.4 64 bit system
 
 # Run this script as root
+# After the script runs python will be available at /opt/python2.6/bin/python2.6
 
 cd
 yum update -y
