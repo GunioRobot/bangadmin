@@ -39,6 +39,7 @@
 cd
 yum update -y
 yum install sqlite-devel.x86_64 -y
+bzip2-devel readline-devel tcl-devel tk-devel 
 yum groupinstall 'Development Tools' -y
 yum install openssl-devel* zlib*.x86_64
 rpm -Uvh http://download.fedora.redhat.com/pub/epel/5/i386/epel-release-5-3.noarch.rpm
