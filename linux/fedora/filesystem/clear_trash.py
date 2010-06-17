@@ -32,12 +32,13 @@
 
 # Clears the trash contents of all users
 # Run as root
+# Tested on Fedora 12
 
 import os
 
-for homedirname in os.listdir("/home"):
-    command = "rm -rf %/home/%s/.local/share/Trash/*"%homedirname
+for home_dir_name in os.listdir("/home"):
+    command = "rm -rf /home/%s/.local/share/Trash/info/*"%home_dir_name
     os.system(command)
-
-os.system("rm -rf /root/.local/share/Trash/*")
+    command = "rm -rf /home/%s/.local/share/Trash/files/*"%home_dir_name
+    os.system(command)
 
