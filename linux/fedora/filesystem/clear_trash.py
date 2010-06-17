@@ -37,8 +37,6 @@
 import os
 
 for home_dir_name in os.listdir("/home"):
-    command = "rm -rf /home/%s/.local/share/Trash/info/*"%home_dir_name
-    os.system(command)
-    command = "rm -rf /home/%s/.local/share/Trash/files/*"%home_dir_name
+    command = "rm -rf /home/%s/.local/share/Trash/*"%home_dir_name
     os.system(command)
 
