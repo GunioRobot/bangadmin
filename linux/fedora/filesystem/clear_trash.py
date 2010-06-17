@@ -36,8 +36,8 @@
 import os
 
 for homedirname in os.listdir("/home"):
-    command = "rm -rf %/home/%s/.local/share/.Trash/expunged/*"%homedirname
+    command = "rm -rf %/home/%s/.local/share/.Trash/*"%homedirname
     os.system(command)
 
-os.system("rm -rf /root/.local/share/.Trash/expunged/*")
+os.system("rm -rf /root/.local/share/.Trash/*")
 
