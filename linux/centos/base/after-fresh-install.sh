@@ -50,4 +50,5 @@ yum install gcc kernel-devel kernel-headers sqlite-devel sqlite -y
 yum install htop -y
 
 
-
+#Install version control software
+yum install subversion mercurial git -y
