@@ -30,26 +30,7 @@
 #  
 # 
 
-# Contact - http://techchorus.net
 
-# Things to do after fresh install of CentOS
+# Enable the Fedora EPEL Repository
 
-# update everything
-yum update -y
-
-# Install vim-enhanced
-yum install vim-enhanced
-# Add alias vi=vim in /root/.bashrc
-echo "alias vi='vim'"  > ~/.bashrc
-
-# Install development packages
-yum install gcc kernel-devel kernel-headers sqlite-devel sqlite -y
-
-# Configure repositories
-
-# Install server administration essential software
-yum install htop -y
-
-
-#Install version control software
-yum install subversion mercurial git -y
+rpm -Uvh http://download.fedora.redhat.com/pub/epel/5/i386/epel-release-5-3.noarch.rpm
