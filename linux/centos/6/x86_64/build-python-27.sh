@@ -1,4 +1,5 @@
 #!/bin/bash
+# Install Python 2.7.2 alternatively
 yum groupinstall "development tools" -y
 yum install sqlite-devel bzip2-devel readline-devel tcl-devel tk-devel -y
 mkdir tmp
