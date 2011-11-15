@@ -1,7 +1,7 @@
 #!/bin/bash
 # Install Python 2.7.2 alternatively
 yum groupinstall "development tools" -y
-yum install sqlite-devel bzip2-devel readline-devel tcl-devel tk-devel openssh-devel zlib-devel -y
+yum install sqlite-devel bzip2-devel readline-devel tcl-devel tk-devel -y
 mkdir tmp
 cd tmp
 wget http://python.org/ftp/python/2.7.2/Python-2.7.2.tgz
